@@ -1,0 +1,43 @@
+@import "./variable.css";
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 26px;
+    white-space: pre-line;
+    text-align: center;
+  }
+  .back__anchor {
+    font-size: 16px;
+  }
+  .navigate {
+    height: 10vh !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.navigate {
+  background-color: #ecf2ff;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-weight: 600;
+  color: black;
+}
+
+.home__anchor {
+  text-decoration: none !important;
+  color: black;
+  left: 3vw;
+}
+.back__anchor {
+  right: 3vw;
+}

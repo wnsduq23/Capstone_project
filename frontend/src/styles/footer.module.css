@@ -1,0 +1,52 @@
+@import "./variable.css";
+@media screen and (max-width: 767px) {
+  .number {
+    font-size: 18px;
+  }
+  .footer__btn {
+    font-size: 18px;
+  }
+  .footerContainer {
+    height: 10vh !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .number {
+    font-size: 24px;
+  }
+  .footer__btn {
+    font-size: 36px;
+  }
+}
+.footerContainer {
+  background-color: #ecf2ff;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+}
+
+.number {
+  color: var(--mainColor);
+  font-weight: 550;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__btn {
+  background-color: var(--mainColor);
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 550;
+  height: 70%;
+
+  /*box-shadow: 5px 5px 10px rgba(0,0,0,0.15);*/
+  color: var(--secondColor);
+}
+.tempContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

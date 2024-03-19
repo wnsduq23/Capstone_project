@@ -1,0 +1,18 @@
+<div layout:fragment="content" class="container">
+    <h5 class="my-3 border-bottom pb-2">글 등록</h5>
+    <form th:action="@{/community_post/create}" method="post">
+        <div class="mb-3">
+            <label for="subject" class="form-label">제목</label>
+            <input type="text" name="subject" id="subject" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea name="content" id="content" class="form-control" rows="10"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">비밀번호</label>
+            <textarea name="password" id="password" class="form-control" rows="1"></textarea>
+        </div>
+        <input type="submit" value="저장하기" class="btn btn-primary my-2">
+    </form>
+</div>

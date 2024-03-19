@@ -1,0 +1,184 @@
+@import "./variable.css";
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    width: 100vw;
+  }
+  .titleContainer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .titleDiv {
+    width: 100vw;
+    height: 4vh;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 0.5vh 0;
+    box-sizing: border-box;
+    padding-left: 1.5vw;
+  }
+  .noneTitleDiv {
+    width: 100vw;
+    height: 6vh;
+    box-sizing: border-box;
+    padding-left: 1.5vw;
+  }
+  .noneTitleDiv div {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  .noneTitleDiv button {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 0.5vw;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+  }
+  .contextContainer {
+    padding-left: 2vw;
+    box-sizing: border-box;
+  }
+  .commentContainer {
+    width: 100vw;
+    height: 10vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1vh 3vw;
+    box-sizing: border-box;
+  }
+  .addCommentContainer {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addCommentContainer form {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .addCommentContainer textarea {
+    resize: none;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  .addCommentContainer input {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+  }
+  .addCommentContainer button {
+    background-color: white;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    width: 100vw;
+  }
+  .titleContainer {
+    width: 100vw;
+    height: 7.5vh;
+    display: flex;
+  }
+  .titleDiv {
+    display: flex;
+    width: 60vw;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2vw;
+  }
+  .titleDiv div {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .noneTitleDiv {
+    width: 40vw;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-top: 10px;
+
+    font-size: 26px;
+  }
+  .noneTitleDiv div {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3vh;
+  }
+  .noneTitleDiv input {
+    font-size: 14px;
+    width: 13vw;
+    height: 3vh;
+    margin: 0 0.5vw;
+  }
+  .noneTitleDiv button {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+  }
+  .contextContainer {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+    font-size: 24px;
+  }
+  .commentContainer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .commentContainer div:first-child {
+    padding-left: 2vw;
+    box-sizing: border-box;
+  }
+  .commentContainer div:last-child {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2vw;
+  }
+  .addCommentContainer form {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1vh;
+    height: 10vh;
+    font-size: 20px;
+  }
+  .addCommentContainer input {
+    height: 3.5vh;
+  }
+  .addCommentContainer textarea {
+    height: 7vh;
+    width: 50vw;
+    margin: 0 1vw 0 0.5vw;
+    text-align: left;
+    font-size: 20px;
+    resize: none;
+  }
+  .addCommentContainer button {
+    height: 5vh;
+    width: 5vw;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+}

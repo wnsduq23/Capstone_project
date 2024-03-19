@@ -1,0 +1,7 @@
+@import "./variable.css";
+@import "./reset.css";
+
+body {
+  background-color: var(--secondColor);
+  font-family: "Nanum Gothic", sans-serif;
+}

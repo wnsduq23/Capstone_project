@@ -1,0 +1,28 @@
+<h1 th:text="${Community_post.subject}"></h1>
+<div th:text="${Community_post.content}"></div>
+<div th:if="${param.error != null}" class="alert alert-danger">
+    <p th:text="${param.error}"></p>
+</div>
+<form th:action="@{|/community_post/edit/${Community_post.id}|}" method="get">
+    <h5 class="my-3 border-bottom pb-2"></h5>
+    <input type="submit" value="편집" class="btn btn-primary my-2">
+</form>
+<form th:action="@{/community_post/delete/{id}(id=${Community_post.id})}" method="post">
+    <div class="mb-3">
+        <label for="password" class="form-label">비밀번호</label>
+        <input type="password" name="password" id="password" class="form-control" required>
+    </div>
+    <input type="submit" value="게시글 삭제" class="btn btn-danger">
+</form>
+<h5 th:text="|${#lists.size(Community_post.commentList)}개의 답변이 있습니다.|"></h5>
+<div>
+    <ul>
+        <li th:each="Community_comment : ${Community_post.commentList}" th:text="${Community_comment.content}"></li>
+    </ul>
+</div>
+<form th:action="@{|/community_comment/create/${Community_post.id}|}" method="post">
+    <h5 class="my-3 border-bottom pb-2">댓글내용    댓글비밀번호</h5>
+    <textarea name="content" id="content" rows="1"></textarea>
+    <textarea name="password" id="password" rows="1"></textarea>
+    <input type="submit" value="댓글등록">
+</form>

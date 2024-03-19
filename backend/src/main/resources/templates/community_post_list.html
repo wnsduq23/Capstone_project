@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>제목</th>
+            <th>작성일시</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="Community_post : ${community_postList}">
+            <td>
+                <a th:href="@{|/community_post/detail/${Community_post.id}|}" th:text="${Community_post.subject}"></a>
+            </td>
+            <td th:text="${Community_post.createDate}"></td>
+        </tr>
+    </tbody>
+</table>
+<a th:href="@{/community_post/create}" class="btn btn-primary">글 등록하기</a>

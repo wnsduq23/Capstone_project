@@ -1,0 +1,80 @@
+@media screen and (max-width: 767px) {
+  .formContainer {
+    height: 80vh !important;
+  }
+  .formTitle {
+    font-size: 20px;
+    width: 90%;
+    height: 10vh;
+  }
+  .formTitle input {
+    font-size: 20px;
+    width: 70vw;
+  }
+  .formTitle div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  .formTextarea {
+    margin-top: 4vh;
+    height: 55vh !important;
+  }
+  .formSubmit {
+    font-size: 18px;
+    width: 20vw0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .formTitle {
+    font-size: 28px;
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .formTitle input[type="text"] {
+    margin-left: 1vw;
+    font-size: 28px;
+    width: 55vw;
+  }
+  .formTitle input[type="password"] {
+    margin-left: 1vw;
+    font-size: 28px;
+    width: 15vw;
+  }
+  .formSubmit {
+    font-size: 28px;
+    width: 15vw;
+  }
+}
+
+.formContainer {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formTextarea {
+  width: 90%;
+  height: 50vh;
+  font-size: 20px;
+}
+.formSubmitDiv {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.formSubmit {
+  height: 5vh;
+  background-color: white;
+  border-radius: 10px;
+}

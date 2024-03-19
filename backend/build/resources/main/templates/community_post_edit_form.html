@@ -1,0 +1,18 @@
+<div layout:fragment="content" class="container">
+    <h5 class="my-3 border-bottom pb-2">글 수정</h5>
+    <form th:action="@{/community_post/edit/{id}(id=${post.id})}" method="post">
+        <div class="mb-3">
+            <label for="subject" class="form-label">제목</label>
+            <input type="text" name="subject" id="subject" class="form-control" th:value="${post.subject}">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea name="content" id="content" class="form-control" rows="10" th:text="${post.content}"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">비밀번호</label>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <input type="submit" value="수정하기" class="btn btn-primary my-2">
+    </form>
+</div>

@@ -1,0 +1,11 @@
+@import "./variable.css";
+@media screen and (max-width: 767px) {
+  .mapLoader {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mapLoader {
+    height: 70vh;
+  }
+}
